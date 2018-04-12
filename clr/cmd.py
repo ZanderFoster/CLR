@@ -1,10 +1,7 @@
 #!/usr/bin/env python
-import argparse, serial, time
- 
-ser = serial.Serial('/dev/clr', 115200)
-print("Opening Port...")
-time.sleep(3)
+import argparse, serial
 
+ser = serial.Serial('/dev/clr', 115200)
 
 
 parser = argparse.ArgumentParser(description='Turn a light on.')
