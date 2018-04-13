@@ -1,0 +1,15 @@
+[Unit]
+
+Description=Sets the bootup color.
+
+After=syslog.target
+
+[Service]
+
+ExecStart=/home/zander/CLR/clr/cmd.py -b 0 -g 0
+
+RemainAfterExit=true
+
+[Install]
+
+WantedBy=multi-user.target

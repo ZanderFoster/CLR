@@ -1,0 +1,15 @@
+[Unit]
+
+Description=Starts open.py to open arduino ports.
+
+After=syslog.target
+
+[Service]
+
+ExecStart=/home/zander/CLR/clr/open.py -p /dev/clr -b 115200
+
+RemainAfterExit=true
+
+[Install]
+
+WantedBy=multi-user.target
